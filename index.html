@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#03050f"><title>VOLT STUNT – Tesla Night Stunt Game</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<canvas id="c"></canvas>
+<div id="hud" class="hide">
+ <div id="score"><small>SCORE</small><b id="sc">0</b><small>BEST <span id="bs">0</span></small></div>
+ <div id="pop"></div>
+ <div id="dash"><div><small>ALT</small><b id="al">0</b><small>m</small></div>
+  <div class="big"><b id="sp">0</b><small>KM/H</small></div>
+  <div class="nit"><i id="nb"></i><small>NITRO</small></div></div>
+ <div id="pad"><div class="g"><button data-k="l">◀</button><button data-k="r">▶</button></div>
+  <div class="g"><button data-k="n" class="nb">NITRO</button><button data-k="d">▼</button><button data-k="u">▲</button></div></div>
+</div>
+<section id="start" class="screen"><h1>VOLT<span>STUNT</span></h1><p>Launch off the ramps. Flip. Land. Don’t crash.</p>
+ <p class="best">BEST <b id="bs0">0</b></p><button id="go">START</button>
+ <p class="help">W / ↑ gas · front flip &nbsp; S / ↓ brake · back flip<br>A D / ← → steer · air roll &nbsp; SHIFT / SPACE nitro<br>Land on your wheels! Press ENTER to start.</p></section>
+<section id="over" class="screen hide"><h1 id="ot">CRASHED</h1><p>SCORE</p><h2 id="os">0</h2><p class="best">BEST <b id="ob">0</b></p><button id="re">RESTART</button></section>
+<script src="https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.min.js"></script>
+<script src="game.js"></script></body></html>
